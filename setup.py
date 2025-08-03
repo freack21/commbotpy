@@ -5,7 +5,7 @@ setup(
   version="0.0.0",
   packages=find_packages(),
   install_requires=["pyserial"],
-  author="Fikri",
+  author="Fikri Rivandi",
   author_email="fixri2104@gmail.com",
   description="Lightweight serial comms lib between Python and Arduino using pub/sub like ROS.",
   keywords=["arduino", "serial", "robotics", "communication", "pubsub"],
