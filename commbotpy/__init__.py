@@ -30,7 +30,10 @@ class CommBotClient:
     return lambda data: self.publish(topic, data)
 
   def _publish(self, data):
-    self.ser.write((json.dumps(data) + "\n").encode())
+    try:
+      self.ser.write((json.dumps(data) + "\n").encode())
+    except Exception:
+      pass
 
   def publish(self, topic, payload):
     if not isinstance(payload, dict):
